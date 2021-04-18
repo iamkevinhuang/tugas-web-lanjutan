@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 
 const server = http.createServer(function (req, res) {
-        fs.readFile("./M02-fsModuleAsync/index.html", (err, data) => {
+        fs.readFile("index.html", (err, data) => {
             if (err) {
                 throw err;
             }

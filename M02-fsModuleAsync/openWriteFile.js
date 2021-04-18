@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-fs.open("./M02-fsModuleAsync/biodata.txt", "w+", function (err, file) {
+fs.open("biodata.txt", "w+", function (err, file) {
     if (err) {
         throw err;
     }
