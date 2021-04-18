@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Pertemuan 4</title>
+</head>
+
+<body>
+    <h1>Pertemuan 4 - Routing, Post Method & Body Parse</h1>
+
+    <h3>Contoh Route dengan Method POST - Pendaftaran Mahasiswa Baru</h3>
+    <form action="http://localhost:3000/api/pendaftaran_maba" method="POST">
+        Nama: <input type="text" name="nama" value="Kevin" required>
+        <br>
+        Jurusan: <input type="text" name="jurusan" value="TI" required>
+        <br>
+        No HP: <input type="text" name="hp" value="085277978737" required>
+        <br>
+        Email: <input type="text" name="email" value="kvnhuang7@gmail.com" required>
+        <br>
+        <input type="submit" value="Daftar">
+    </form>
+
+    <h3>Contoh Route dengan Method GET - Detail Mahasiswa</h3>
+    <form action="http://localhost:3000/api/data_mhs/" method="GET">
+        NIM: <input type="text" name="nim" value="181111218" required>
+        <br>
+        <input type="submit" value="Cari">
+    </form>
+</body>
+
+</html>
